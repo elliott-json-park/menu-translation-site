@@ -1,0 +1,24 @@
+name: Translation error
+description: Report a wrong or confusing translation on the menu page
+title: "Translation error: "
+labels: ["translation"]
+body:
+  - type: input
+    id: dish
+    attributes:
+      label: Which dish or text is wrong?
+      placeholder: "e.g. Lunch Set A on Monday, 'Soft tofu stew'"
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: What should it say?
+  - type: dropdown
+    id: lang
+    attributes:
+      label: Language
+      options: ["English", "中文"]
+  - type: markdown
+    attributes:
+      value: "Issues are public. Please don't include personal information."
